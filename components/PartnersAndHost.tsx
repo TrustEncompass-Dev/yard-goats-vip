@@ -7,7 +7,7 @@ const partners = [
     company: "Paychex",
     contact: "Jamie Scherban",
     specialty: "Payroll Services",
-    logo: "/paychex.png",
+    logo: "/PayChex.png",
   },
   {
     company: "Action Coaching",
