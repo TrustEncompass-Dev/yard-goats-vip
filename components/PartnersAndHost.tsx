@@ -74,14 +74,14 @@ export default function PartnersAndHost() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-slate-900/70 backdrop-blur-sm border border-slate-800 rounded-xl p-6 hover:bg-slate-800/80 hover:border-slate-600 transition-all group flex flex-col items-center text-center shadow-lg"
+                className="bg-slate-900/70 backdrop-blur-sm border border-slate-800 rounded-xl p-6 md:hover:bg-slate-800/80 md:hover:border-slate-600 active:bg-slate-800/90 active:border-slate-700 transition-all group flex flex-col items-center text-center shadow-lg select-none"
               >
                 {/* Logo Area */}
                 <div className="w-full h-24 mb-6 flex items-center justify-center bg-slate-950/80 rounded-lg p-4 border border-slate-800/50">
                   <img 
                     src={partner.logo} 
                     alt={partner.company} 
-                    className="max-h-full max-w-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                    className="max-h-full max-w-full object-contain grayscale-0 opacity-100 md:grayscale md:opacity-80 md:group-hover:grayscale-0 md:group-hover:opacity-100 transition-all duration-300"
                   />
                 </div>
 
@@ -103,7 +103,6 @@ export default function PartnersAndHost() {
           viewport={{ once: true }}
           className="bg-gradient-to-br from-slate-900/90 to-slate-950/90 backdrop-blur-md border border-slate-800 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl"
         >
-          {/* Subtle Background Accent */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#1E90FF]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
           
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -111,11 +110,7 @@ export default function PartnersAndHost() {
               <p className="text-[#1E90FF] font-bold text-sm tracking-widest uppercase mb-6">Meet The Host</p>
               
               <div className="mb-6 flex items-center gap-3">
-                <img 
-                  src="/consult.png" 
-                  alt="Consult Encompass Icon" 
-                  className="h-12 object-contain"
-                />
+                <img src="/consult.png" alt="Consult Encompass Icon" className="h-12 object-contain" />
                 <span className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
                   Consult Encompass
                 </span>
@@ -134,24 +129,12 @@ export default function PartnersAndHost() {
                 Topics Often Discussed Include:
               </h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
-                <li className="flex items-center gap-2">
-                  <span className="text-[#1E90FF]">✔</span> Business Succession
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#1E90FF]">✔</span> Exit Planning
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#1E90FF]">✔</span> Wealth Preservation
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#1E90FF]">✔</span> Tax-Efficient Strategies
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#1E90FF]">✔</span> Key Person Planning
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#1E90FF]">✔</span> Business Continuity
-                </li>
+                <li className="flex items-center gap-2"><span className="text-[#1E90FF]">✔</span> Business Succession</li>
+                <li className="flex items-center gap-2"><span className="text-[#1E90FF]">✔</span> Exit Planning</li>
+                <li className="flex items-center gap-2"><span className="text-[#1E90FF]">✔</span> Wealth Preservation</li>
+                <li className="flex items-center gap-2"><span className="text-[#1E90FF]">✔</span> Tax-Efficient Strategies</li>
+                <li className="flex items-center gap-2"><span className="text-[#1E90FF]">✔</span> Key Person Planning</li>
+                <li className="flex items-center gap-2"><span className="text-[#1E90FF]">✔</span> Business Continuity</li>
               </ul>
             </div>
           </div>

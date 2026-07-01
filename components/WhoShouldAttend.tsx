@@ -10,7 +10,7 @@ export default function WhoShouldAttend() {
     },
     { 
       title: "Practice Owners", 
-      icon: <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /> // Reusing building structure for practice
+      icon: <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
     },
     { 
       title: "Entrepreneurs", 
@@ -33,7 +33,7 @@ export default function WhoShouldAttend() {
   return (
     <section className="relative py-24 bg-slate-950 overflow-hidden z-20 border-t border-slate-900">
       
-      {/* 🌟 Ambient Background Glows */}
+      {/* Ambient Background Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[400px] bg-[#1E90FF]/10 rounded-[100%] blur-[100px]" />
       </div>
@@ -59,11 +59,11 @@ export default function WhoShouldAttend() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-6 flex items-center gap-5 hover:bg-slate-800/80 hover:border-[#1E90FF]/30 transition-all duration-300 shadow-lg cursor-default"
+              className="group bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-6 flex items-center gap-5 md:hover:bg-slate-800/80 md:hover:border-[#1E90FF]/30 active:bg-slate-800/60 transition-all duration-300 shadow-lg cursor-default select-none"
             >
-              {/* ⚾️ THE DIAMOND ICON UPDATE */}
-              <div className="flex-shrink-0 w-11 h-11 rotate-45 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 group-hover:bg-[#1E90FF]/20 group-hover:border-[#1E90FF]/40 transition-all duration-300 ml-2 shadow-[0_0_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_20px_rgba(30,144,255,0.3)]">
-                <svg className="w-6 h-6 text-[#1E90FF] -rotate-45 group-hover:scale-110 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              {/* Diamond Icon Inner State */}
+              <div className="flex-shrink-0 w-11 h-11 rotate-45 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 md:group-hover:bg-[#1E90FF]/20 md:group-hover:border-[#1E90FF]/40 transition-all duration-300 ml-2 shadow-[0_0_15px_rgba(0,0,0,0.5)] md:group-hover:shadow-[0_0_20px_rgba(30,144,255,0.3)]">
+                <svg className="w-6 h-6 text-[#1E90FF] -rotate-45 md:group-hover:scale-110 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   {item.icon}
                 </svg>
               </div>
