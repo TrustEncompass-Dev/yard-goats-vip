@@ -35,7 +35,7 @@ export default function WhoShouldAttend() {
       
       {/* 🌟 Ambient Background Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[400px] bg-blue-900/10 rounded-[100%] blur-[100px]" />
+        <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[400px] bg-[#1E90FF]/10 rounded-[100%] blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -59,10 +59,11 @@ export default function WhoShouldAttend() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-6 flex items-center gap-4 hover:bg-slate-800/80 hover:border-blue-500/30 transition-all duration-300 shadow-lg cursor-default"
+              className="group bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-6 flex items-center gap-5 hover:bg-slate-800/80 hover:border-[#1E90FF]/30 transition-all duration-300 shadow-lg cursor-default"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 group-hover:bg-blue-500/20 group-hover:border-blue-500/40 transition-colors">
-                <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              {/* ⚾️ THE DIAMOND ICON UPDATE */}
+              <div className="flex-shrink-0 w-11 h-11 rotate-45 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 group-hover:bg-[#1E90FF]/20 group-hover:border-[#1E90FF]/40 transition-all duration-300 ml-2 shadow-[0_0_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_20px_rgba(30,144,255,0.3)]">
+                <svg className="w-6 h-6 text-[#1E90FF] -rotate-45 group-hover:scale-110 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   {item.icon}
                 </svg>
               </div>

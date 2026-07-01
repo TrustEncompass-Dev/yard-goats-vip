@@ -96,24 +96,24 @@ export default function Hero({ onRsvpClick }: HeroProps) {
       </div>
 
       <motion.div initial={{ y: -20, opacity: 0 }} animate={textControls} className="relative z-30 flex flex-col items-center text-center px-4 max-w-4xl mt-12 md:mt-0">
-        <h2 className="text-blue-400 font-bold tracking-widest uppercase mb-2 text-xs md:text-sm">Encompass Group Presents</h2>
+        <h2 className="text-[#1E90FF] font-bold tracking-widest uppercase mb-2 text-xs md:text-sm">Encompass Group Presents</h2>
         <h1 className="text-3xl md:text-6xl font-extrabold text-white tracking-tight mb-4 leading-tight px-2">
-          Business Owners Night at the <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Hartford Yard Goats</span>
+          Business Owners Night at the <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E90FF] to-[#00A650]">Hartford Yard Goats</span>
         </h1>
-        <p className="text-emerald-400 font-semibold text-sm md:text-xl tracking-wide mb-3">Build Relationships. Share Ideas. Enjoy the Game.</p>
+        <p className="text-[#00A650] font-semibold text-sm md:text-xl tracking-wide mb-3">Build Relationships. Share Ideas. Enjoy the Game.</p>
         <p className="text-slate-300 text-xs md:text-base max-w-2xl mb-6 leading-relaxed px-4">
           Join a select group of business owners and trusted advisors for an evening of networking, conversation, and baseball in a private pavilion at Dunkin' Park.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 border-y border-slate-800/60 py-3 w-full max-w-3xl mb-8 text-center text-xs md:text-sm text-slate-200 bg-slate-900/40 backdrop-blur-sm rounded-lg px-2">
-          <div><span className="text-blue-400 font-bold block md:inline">DATE:</span> Tuesday, July 28th</div>
-          <div className="border-y md:border-y-0 md:border-x border-slate-800/60 py-1 md:py-0"><span className="text-blue-400 font-bold block md:inline">LOCATION:</span> Private Pavilion at Dunkin' Park</div>
-          <div><span className="text-emerald-400 font-bold block md:inline">ADMISSION:</span> Complimentary for You & Guest</div>
+          <div><span className="text-[#1E90FF] font-bold block md:inline">DATE:</span> Tuesday, July 28th</div>
+          <div className="border-y md:border-y-0 md:border-x border-slate-800/60 py-1 md:py-0"><span className="text-[#1E90FF] font-bold block md:inline">LOCATION:</span> Private Pavilion at Dunkin' Park</div>
+          <div><span className="text-[#00A650] font-bold block md:inline">ADMISSION:</span> Complimentary for You & Guest</div>
         </div>
 
-        <button onClick={onRsvpClick} className="group relative px-8 py-4 bg-white text-slate-950 font-black uppercase tracking-wider text-xs md:text-sm rounded-sm overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
-          <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-blue-100/40 to-transparent" />
-          [ RSVP NOW ]
+        <button onClick={onRsvpClick} className="group relative px-8 py-4 bg-white text-slate-950 font-black uppercase tracking-wider text-xs md:text-sm rounded-sm overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(30,144,255,0.5)]">
+          <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-[#1E90FF]/20 to-transparent" />
+          RSVP NOW
         </button>
       </motion.div>
     </section>

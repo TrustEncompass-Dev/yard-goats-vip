@@ -39,7 +39,9 @@ export default function Footer({ onRsvpClick }: FooterProps) {
           <div className="max-w-sm">
             <div className="flex items-center gap-3 mb-4">
               <img src="/consult.png" alt="Consult Encompass Icon" className="h-10 object-contain" />
-              <span className="text-xl font-bold text-white tracking-tight">Consult Encompass, LLC</span>
+              <a href="https://consultencompass.com/" target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-white tracking-tight hover:text-blue-400 transition-colors">
+                Consult Encompass, LLC
+              </a>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
               Helping business owners build stronger enterprises today while preparing for an intentional tomorrow.

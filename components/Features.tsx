@@ -23,10 +23,10 @@ export default function Features() {
   return (
     <section className="relative py-24 bg-slate-950 overflow-hidden z-20 border-t border-slate-900">
       
-      {/* 🌟 Ambient Background Glows */}
+      {/* 🌟 Ambient Background Glows - Now using Yard Goats Colors */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-emerald-600/10 rounded-full blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-[#1E90FF]/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-[#00A650]/10 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6">
@@ -55,10 +55,11 @@ export default function Features() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: index * 0.1 }}
-                className="flex items-center gap-3 bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-lg p-4 hover:bg-slate-800/50 transition-colors"
+                className="flex items-center gap-4 bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-lg p-4 hover:bg-slate-800/50 transition-colors"
               >
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center border border-emerald-500/30">
-                  <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                {/* ⚾️ THE DIAMOND ICON UPDATE w/ Team Blue */}
+                <div className="flex-shrink-0 w-6 h-6 rotate-45 rounded-[4px] bg-[#1E90FF]/20 flex items-center justify-center border border-[#1E90FF]/40 ml-1 shadow-[0_0_10px_rgba(30,144,255,0.2)]">
+                  <svg className="w-4 h-4 text-[#1E90FF] -rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
@@ -99,7 +100,7 @@ export default function Features() {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-lg p-5 text-center flex items-center justify-center hover:border-blue-500/30 hover:bg-slate-800/60 transition-all shadow-lg"
+                className="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-lg p-5 text-center flex items-center justify-center hover:border-[#1E90FF]/30 hover:bg-slate-800/60 transition-all shadow-lg"
               >
                 <span className="text-slate-200 text-sm font-semibold tracking-wide">
                   {item}

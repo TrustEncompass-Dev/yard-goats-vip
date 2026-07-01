@@ -53,9 +53,9 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={openModal}
-            className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-500 to-emerald-500 hover:from-blue-600 hover:to-emerald-600 text-white font-black uppercase tracking-widest text-xs px-6 py-4 rounded-full shadow-[0_10px_30px_rgba(59,130,246,0.4)] border border-white/10"
+            className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-[#1E90FF] to-[#00A650] hover:from-[#1E90FF]/90 hover:to-[#00A650]/90 text-white font-black uppercase tracking-widest text-xs px-6 py-4 rounded-full shadow-[0_10px_30px_rgba(30,144,255,0.4)] border border-white/10"
           >
-            [ RSVP NOW ]
+            RSVP NOW
           </motion.button>
         )}
       </AnimatePresence>

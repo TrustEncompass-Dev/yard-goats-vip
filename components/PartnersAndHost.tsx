@@ -26,13 +26,34 @@ const partners = [
     contact: "Event Partner",
     specialty: "Property & Casualty",
     logo: "/appleseed.webp",
+  },
+  {
+    company: "Westfield Bank",
+    contact: "Event Partner",
+    specialty: "Commercial Banking",
+    logo: "/westfield.jpg",
+  },
+  {
+    company: "Lansing Building Products",
+    contact: "Event Partner",
+    specialty: "Building Materials",
+    logo: "/lansing.webp",
   }
 ];
 
 export default function PartnersAndHost() {
   return (
-    <section className="py-24 bg-slate-950 relative border-t border-slate-900 z-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-24 bg-slate-950 relative border-t border-slate-900 z-20 overflow-hidden">
+      
+      {/* Subtle Baseball Pinstripe Background */}
+      <div 
+        className="absolute inset-0 pointer-events-none z-0" 
+        style={{ 
+          backgroundImage: "repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255,255,255,0.02) 48px, rgba(255,255,255,0.02) 49px)" 
+        }} 
+      />
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         
         {/* EVENT PARTNERS SECTION */}
         <div className="mb-24">
@@ -45,7 +66,7 @@ export default function PartnersAndHost() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {partners.map((partner, index) => (
               <motion.div 
                 key={index}
@@ -53,10 +74,10 @@ export default function PartnersAndHost() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:bg-slate-800/50 hover:border-slate-600 transition-all group flex flex-col items-center text-center"
+                className="bg-slate-900/70 backdrop-blur-sm border border-slate-800 rounded-xl p-6 hover:bg-slate-800/80 hover:border-slate-600 transition-all group flex flex-col items-center text-center shadow-lg"
               >
                 {/* Logo Area */}
-                <div className="w-full h-24 mb-6 flex items-center justify-center bg-slate-950/50 rounded-lg p-4 border border-slate-800/50">
+                <div className="w-full h-24 mb-6 flex items-center justify-center bg-slate-950/80 rounded-lg p-4 border border-slate-800/50">
                   <img 
                     src={partner.logo} 
                     alt={partner.company} 
@@ -66,7 +87,7 @@ export default function PartnersAndHost() {
 
                 {/* Text Area */}
                 <h3 className="text-white font-bold text-lg mb-1">{partner.company}</h3>
-                <p className="text-emerald-400 font-medium text-xs uppercase tracking-wider mb-2">
+                <p className="text-[#00A650] font-medium text-xs uppercase tracking-wider mb-2">
                   {partner.specialty}
                 </p>
                 <p className="text-slate-400 text-sm">{partner.contact}</p>
@@ -80,16 +101,15 @@ export default function PartnersAndHost() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl"
+          className="bg-gradient-to-br from-slate-900/90 to-slate-950/90 backdrop-blur-md border border-slate-800 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl"
         >
           {/* Subtle Background Accent */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#1E90FF]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
           
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-blue-400 font-bold text-sm tracking-widest uppercase mb-6">Meet The Host</p>
+              <p className="text-[#1E90FF] font-bold text-sm tracking-widest uppercase mb-6">Meet The Host</p>
               
-              {/* Added Real Consult Logo and Text */}
               <div className="mb-6 flex items-center gap-3">
                 <img 
                   src="/consult.png" 
@@ -104,33 +124,33 @@ export default function PartnersAndHost() {
               <p className="text-slate-300 text-base md:text-lg mb-6 leading-relaxed">
                 Encompass Group helps business owners and high-net-worth individuals improve business efficiency, increase enterprise value, protect wealth, and prepare for eventual retirement, succession, or exit.
               </p>
-              <p className="text-emerald-400 font-semibold text-lg border-l-2 border-emerald-500 pl-4">
+              <p className="text-[#00A650] font-semibold text-lg border-l-2 border-[#00A650] pl-4">
                 "Our mission is simple: Help business owners build stronger businesses today while preparing for tomorrow."
               </p>
             </div>
 
-            <div className="bg-slate-950/50 rounded-xl p-6 md:p-8 border border-slate-800">
+            <div className="bg-slate-950/60 rounded-xl p-6 md:p-8 border border-slate-800">
               <h3 className="text-white font-semibold mb-4 border-b border-slate-800 pb-3 text-sm uppercase tracking-wider">
                 Topics Often Discussed Include:
               </h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
                 <li className="flex items-center gap-2">
-                  <span className="text-blue-500">✔</span> Business Succession
+                  <span className="text-[#1E90FF]">✔</span> Business Succession
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-blue-500">✔</span> Exit Planning
+                  <span className="text-[#1E90FF]">✔</span> Exit Planning
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-blue-500">✔</span> Wealth Preservation
+                  <span className="text-[#1E90FF]">✔</span> Wealth Preservation
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-blue-500">✔</span> Tax-Efficient Strategies
+                  <span className="text-[#1E90FF]">✔</span> Tax-Efficient Strategies
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-blue-500">✔</span> Key Person Planning
+                  <span className="text-[#1E90FF]">✔</span> Key Person Planning
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-blue-500">✔</span> Business Continuity
+                  <span className="text-[#1E90FF]">✔</span> Business Continuity
                 </li>
               </ul>
             </div>
